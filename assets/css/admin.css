@@ -1,0 +1,291 @@
+ 
+	
+
+
+@font-face {
+	font-family: 'museo-slab';
+	src: url('../fonts/museo-slab-500.eot');
+	src: url('../fonts/museo_slab_500.otf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'museo-slab';
+}
+
+
+
+html, body, div.content { width:100%; height:100%; margin:0;  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (min-width: 800px) {
+   [class*="col-"] {
+    padding: 25px;
+   }
+}
+
+
+
+[class*="back-"] {
+	margin:0px;
+	font-family: 'museo-slab';
+    float: left;
+    padding: 25px;
+    height: 50vh;
+}
+
+@media screen and (max-width: 800px) {
+   [class*="col-"] {
+    width:100%;
+   }
+   [class*="back-"] {
+   height: 70vh;
+   }
+}
+.title {
+	background-color: #AAE7C0;
+	margin: auto;
+	}
+	
+.text-center {
+	text-align:center;
+}
+
+.text-black {
+	color: black;
+}
+
+.back-blue {
+	background-color: #AAE7C0;
+}
+
+.back-wheat {
+	background-color: #E8DAB2;
+}
+
+.back-white {
+	background-color: #FFF;
+}
+
+.back-navy {
+	background-color: #B2B6B7;
+	}
+
+.back-orange {
+	background-color: #B4B634;
+}
+
+#admin {
+	text-align: center;
+}
+
+#admin>h1 {
+	color : #444;
+	font-weight: normal;
+}
+
+#admin>p, h2 {
+	color: #444;
+	clear:right;
+	font-size: 1.3em;
+	font-weight:normal;
+}
+
+.error {
+	color: red;
+}
+
+.adminMessage {
+	color: #444;
+	padding: 3vh;
+	line-height:1.5em;
+}
+
+@media screen and (max-width:800px) {
+		#adminMessage {
+			display: none;
+			
+		}
+	}
+	
+	@media screen and (min-width:800px) {
+		#adminMessage-small {
+			display: none;
+		}
+	}
+
+@media screen and (max-width:800px) {
+	#firstnameError, #emailError {
+		display:none;
+	}
+}
+
+@media screen and (min-width:800px) {
+	#firstnameError-small, #emailError-small {
+		display:none;
+	}
+}
+
+.text-red {
+	color:#840B30;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #666;
+    font-weight: lighter;
+    opacity: 0.5; /* Firefox */
+    }
+
+#newmemberfirstname, #newmemberemail {
+	color: #444444;
+	padding: 1vh 0.8vw;
+	font-size:1em;
+	width: 80%;
+	background: -moz-linear-gradient(
+		top,
+		#EFF 0%,
+		#FFF);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#EFF),
+		to(#FFF));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #840b2f;
+	box-shadow: 0.5px 0.5px 0.5px rgba(132, 11, 48, 1),
+    		inset 1px 1px 7px rgba(204, 204, 204, 1);
+    	-webkit-box-shadow: 
+    		inset 0.5px 0.5px 1px rgba(130, 160, 160, 1);
+    	-moz-box-shadow: 0.5px 0.5px 0.5px rgba(132, 11, 48, 1),
+    		inset 1px 1px 7px rgba(170, 231, 192, 1);
+}
+
+#subButton {
+	
+	color: #444;
+	padding: 1vh 0.8vw;
+	font-size:1em;
+	width: 40%;
+	background: -moz-linear-gradient(
+		top,
+		#FFF 0%,
+		#EFEEEA);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#FFF),
+		to(#DDD));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #840b2f;
+	box-shadow: 0.5px 0.5px 0.5px rgba(132, 11, 48, 1),
+    		inset 1px 1px 7px rgba(204, 204, 204, 1);
+    	-webkit-box-shadow: 
+    		inset 0.5px 0.5px 1px rgba(130, 160, 160, 1);
+    	-moz-box-shadow: 0.5px 0.5px 0.5px rgba(132, 11, 48, 1),
+    		inset 1px 1px 7px rgba(170, 231, 192, 1);
+
+}
+
+@media screen and (max-width:800px) {
+	#subButton {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:800px) {
+	#newmemberfirstname, #newmemberemail {
+		width: 100%;
+	}
+}
+
+.insideIcon {
+		position:absolute;
+		text-indent:0.8vw;
+		margin-top: 1.45vh;
+		color:#666;
+		opacity: 0.5;
+	}
+	
+	@media screen and (max-width:800px) {
+		.insideIcon {
+     		text-indent:2vw;
+     		margin-left:0vw;
+     		
+     	}
+	}	
+	
+ .inputField {
+     	text-indent:1.7vw;
+     }
+     
+       
+ .mailField {
+    	text-indent:1.65vw;
+    }
+    
+    .psswrdField {
+    	text-indent:1.7vw;
+    	
+    }
+    
+    @media screen and (max-width:800px) {
+		.inputField, .mailField, .psswrdField {
+     		text-indent:8vw;
+     	}
+     	
+	}
+	
+	 @media screen and (max-width:800px) {
+		.mailField {
+     		text-indent:8vw;
+     	}
+   	}
+   	
+   	#submitButton {
+		
+  		margin: 0 auto;		
+	}
+	
+   	 .flex-center-all {
+  			display: flex;
+  			justify-content: space-between;
+  			margin-top: 3.25vh;
+  			padding: 0vh 1.5vw;
+	}
+	
+	@media screen and (max-width:800px) {
+		.flex-center-small {
+		display: flex;
+  			justify-content: space-between;
+			/* display: grid;
+  			grid-template-columns:33.3% 33.3% 33.3%; */
+  			padding-left: 0vw;
+  			
+  		}
+	}
+	
+	.voice {
+		width: 30%;
+	}
+  
+   
+  
+   
+   
+	
+	
+	
